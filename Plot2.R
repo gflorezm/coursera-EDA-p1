@@ -1,6 +1,6 @@
 #########################################
 #                                       #
-#              Plot 1.                  #
+#              Plot 2.                  #
 #                                       #
 #########################################
 
@@ -42,12 +42,20 @@ hpcSubset <- hpcData %>%
 # remove the larger original data set
 rm(hpcData)
 
+# merge Date and Time in a new variable
+
+hpcSubset <- hpcSubset %>% 
+     mutate(DateTime = paste(Date, Time, sep = " ")) %>%
+     mutate(DateTime = as.POSIXct(strptime(DateTime, "%Y-%m-%d %H:%M:%S")))
+str(hpcSubset)
+
 
 ## Plot
 
-png("plot1.png", width = 480, height = 480)
-hist(hpcSubset$Global_active_power, col = "red", main = "Global Active Power",
-     xlab = "Global Active Power (kilowatt)")
+png("plot2.png", width = 480, height = 480)
+plot(Global_active_power ~ DateTime, data = hpcSubset, type = "l", 
+     xlab = " ", ylab = "Global Active Power (kilowatt)")
 dev.off()
+
 
 ## END
