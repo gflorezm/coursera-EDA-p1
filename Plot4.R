@@ -68,7 +68,7 @@ plot(Sub_metering_1 ~ DateTime, type = "l",
 lines(DateTime, Sub_metering_2, col = "red")
 lines(DateTime, Sub_metering_3, col = "blue")
 legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
-       lty = 1, col = c("black", "red", "blue"))
+       lty = 1, col = c("black", "red", "blue"), bty = "n")
 
 # Plot C
 plot(Voltage ~ DateTime, type = "l", 
@@ -79,6 +79,7 @@ plot(Global_reactive_power ~ DateTime, type = "l",
      xlab = "Datetime", ylab = "Global_reactive_power")
 
 dev.off()
+par(mfcol = c(1,1))
 
 detach(hpcSubset)
 
