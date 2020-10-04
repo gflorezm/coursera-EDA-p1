@@ -42,5 +42,4 @@ Daily Energy Sub Metering   | `plot3.png` | `plot3.R`
 Electric power consumption (4 plots) | `plot3.png` | `plot3.R`
 
 
-<br/>
 More information of this project at the [official repo](https://github.com/rdpeng/ExData_Plotting1) of the instructor.
