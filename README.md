@@ -34,12 +34,12 @@ Our overall goal here is simply to examine how household energy usage varies ove
 This repo contains 4 exploratory graphs and the R code to generate each one 
 <br/>
 
-Description | png plot | R code
---- | --- | --- 
-Global Active Power histogram | `plot1.png` | `plot1.R`
-Daily Global Active Power  | `plot2.png` | `plot2.R`
-Daily Energy Sub Metering   | `plot3.png` | `plot3.R`
-Electric power consumption (4 plots) | `plot4.png` | `plot4.R`
+  Description | png plot | R code
+  :---:|:---:|:---: 
+  Global Active Power histogram | `plot1.png` | `plot1.R`
+  Daily Global Active Power  | `plot2.png` | `plot2.R`
+  Daily Energy Sub Metering   | `plot3.png` | `plot3.R`
+  Electric power consumption (4 plots) | `plot4.png` | `plot4.R`
 
-
+  
 More information of this project at the [official repo](https://github.com/rdpeng/ExData_Plotting1) of the instructor.
